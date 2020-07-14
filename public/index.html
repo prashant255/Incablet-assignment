@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src = "js/app.js"></script>
+</head>
+
+<style>
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    td, th{
+        font-size: 25px
+    }
+    #smallp {
+        font-size: 15px;
+        color: gray;
+    }
+    header {
+        color: midnightblue;
+    }
+</style>
+
+<body>
+  <br>
+<header align="center"><h1><b>INCABLET ASSIGNMENT</b></h1></header>
+<div class="container">
+<br>
+  <center><h2>Employee Database</h2></center><br>
+  <button type="button" class="btn btn-success"  onclick="window.location.href='form.html'">Add new Employee</button>
+  <p id="smallp"> The table is sorted accoring to status and then date</p>            
+  <div class="row">
+    <div class="col-12">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Profile Pic</th>
+        <th> Name</th>
+        <th>Id</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Status</th>
+        <th>Onboarding Date</th>
+      </tr>
+    </thead>
+    <tbody id="tableData"></tbody>
+  </table>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>

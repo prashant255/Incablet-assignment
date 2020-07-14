@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    button {
+        margin-top: 10px
+    }
+    #lab{
+        margin-top:15px
+    }
+    header {
+        color: midnightblue;
+    }
+</style>
+<body>
+    <br>
+    <header align="center"><h1><b>INCABLET ASSIGNMENT</b></h1></header>
+  <center><h2>Add new Emplyee Detail</h2></center><br>
+<div class="container">
+  <button type="button" class="btn btn-success"  onclick="window.location.href='index.html'">Home Page</button>
+  <form id="form" action="index.html" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div>
+    <label for="name">Employee Id:</label>
+      <input type="text" class="form-control" id="id" placeholder="Enter Employee Id" name="id">
+    </div>
+    <div class="form-group">
+      <label for="email">Email-id:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter E-mail" name="email">
+    </div>
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" class="form-control" id="age" placeholder="Enter Age" name="age">
+      </div>
+    <div class="form-group">
+        <label for="date">Onboarding date:</label>
+        <input type="date" class="form-control" id="date" placeholder="Enter date in (dd/mm/yyyy) format" name="date">
+      </div>
+    <div>
+        <b>Gender:</b><br>
+        <label class="radio-inline form-group">
+            <input type="radio" name="gender" id = "male" value = "male"checked>Male
+        </label>
+            <label class="radio-inline">
+        <input type="radio" name="gender" id = "female" value = "female">Female
+        </label>
+    </div>
+    <div>
+        <br><b>Status:</b><br>
+        <label class="radio-inline form-group">
+            <input type="radio" name="status" id = "active" value = "active"checked>Active
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="status" id = "left" value = "left">Left
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="status" id = "onborading" value = "onborading">Onborading
+        </label>
+    </div>
+    <div class="form-group">
+        <label id="lab" for="exampleFormControlFile1">Input profile picture</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="profilePicture">
+        <br><img id="myImg" src="#" alt="your image" width=150>
+    </div>
+    <button type="submit" id = "submit" class="btn btn-primary form-group">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
